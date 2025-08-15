@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="tw-dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,16 +44,6 @@
         plugins: [],
       };
     </script>
-
-    <!-- Google tag (gtag.js) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-');
-        </script> -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
@@ -93,17 +83,16 @@
     >
       <a class="tw-flex tw-p-[4px] tw-gap-2 tw-place-items-center" href="#">
         <div class="tw-h-[60px] tw-max-w-[100px]">
+          <img
+            src="./assets/logo/logo.svg"
+            alt="logo"
+            class="tw-object-contain tw-h-full tw-w-full tw-block dark:tw-hidden"
+          />
           <!-- Light logo (shown in DARK mode) -->
           <img
             src="./assets/logo/lightlogo.svg"
             alt="logo"
-            class="tw-object-contain tw-h-full tw-w-full dark:tw-opacity-100 tw-opacity-0 dark:tw-block tw-hidden"
-          />
-          <!-- Dark logo (shown in LIGHT mode) -->
-          <img
-            src="./assets/logo/darklogo.svg"
-            alt="logo"
-            class="tw-object-contain tw-h-full tw-w-full dark:tw-opacity-0 tw-opacity-100 dark:tw-hidden tw-block"
+            class="object-contain h-full w-full hidden dark:block"
           />
         </div>
       </a>
@@ -599,15 +588,9 @@
                 >
                   <div class="h-[30px] w-fit max-w-[100px]">
                     <img
-                      src="./assets/logo/darklogo.svg"
+                      src="./assets/logo/logo.svg"
                       alt="Light Logo"
-                      class="object-contain h-full w-full dark:hidden"
-                    />
-                    <!-- Dark Mode Logo -->
-                    <img
-                      src="./assets/logo/lightlogo.svg"
-                      alt="Dark Logo"
-                      class="hidden dark:block object-contain h-full w-full"
+                      class="object-contain h-full w-full"
                     />
                   </div>
 
@@ -688,7 +671,7 @@
                       class="tw-absolute tw-top-1/2 mt-[28%] tw-left-1/2 tw--translate-x-1/2 tw--translate-y-1/2 tw-w-[150px] tw-h-[150px]"
                     >
                       <img
-                        src="./assets/logo/darklogo.svg"
+                        src="./assets/logo/logo.svg"
                         class="tw-w-full tw-h-full tw-object-contain opacity-10"
                         alt="Pixa logo"
                       />
@@ -2156,7 +2139,7 @@
             class="tw-w-full tw-place-items-center tw-flex tw-flex-col tw-gap-6"
           >
             <img
-              src="./assets/logo/logo.png"
+              src="./assets/logo/logo.svg"
               alt="logo"
               srcset=""
               class="tw-max-w-[120px]"
