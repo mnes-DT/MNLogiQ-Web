@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="tw-dark">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Your Market Moves Fast</title>
+		<title>MNLOGIQ</title>
 		<meta
 			name="description"
 			content="Get all your AI models and tools in one place"
@@ -22,7 +22,20 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://github.com/PaulleDemon" />
 		<meta property="og:image" content="" />
+		<!-- Google tag (gtag.js) -->
 
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-3QT5P2HFC6"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "G-3QT5P2HFC6");
+		</script>
 		<link rel="stylesheet" href="css/tailwind-build.css" />
 		<link rel="stylesheet" href="css/index.css" />
 
@@ -55,15 +68,20 @@
 					<img
 						src="./assets/logo/logoLight.svg"
 						alt="logo"
-						class="tw-object-contain tw-h-full tw-w-full"
+						class="tw-object-contain tw-h-full tw-w-full tw-block dark:tw-hidden"
+					/>
+					Light logo (shown in DARK mode)
+					<img
+						src="./assets/logo/logoDark.svg"
+						alt="logo"
+						class="tw-object-contain tw-h-full tw-w-full tw-hidden dark:tw-block"
 					/>
 				</div>
-				<span class="tw-uppercase tw-text-base tw-font-medium">MNLOGIQ</span>
 			</a> -->
 			<a class="tw-flex tw-p-[4px] tw-gap-2 tw-place-items-center" href="#">
 				<div class="tw-h-[60px] tw-max-w-[100px]">
 					<img
-						id="case-study-logo"
+						id="app-logo"
 						src="./assets/logo/logoLight.svg"
 						alt="logo"
 						class="tw-object-contain tw-h-full tw-w-full"
@@ -74,18 +92,17 @@
 				class="collapsible-header animated-collapse max-lg:tw-shadow-md"
 				id="collapsed-header-items"
 			>
+				`
 				<nav
 					class="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center"
 				>
-					<a class="header-links" href="#about"> About </a>
-					<a class="header-links" href="#industry"> Industries </a>
-					<a class="header-links" href="#casestudy"> Case Studies </a>
+					<a class="header-links" href="index.html#about"> About </a>
+					<a class="header-links" href="index.html#industry"> Industries </a>
+					<a class="header-links" href="#"> Case Studies </a>
 
 					<div class="tw-relative tw-flex tw-flex-col tw-place-items-center">
-						<div
-							id="nav-dropdown-toggle-0"
-							class="max-lg:tw-max-w-fit tw-flex header-links tw-gap-1 tw-place-items-center"
-						>
+						<div id="nav-dropdown-toggle-0">
+							<!-- class="max-lg:tw-max-w-fit tw-flex header-links tw-gap-1 tw-place-items-center" -->
 							<!-- <span class=""> Features </span> -->
 							<!-- <i class="tw-text-sm bi bi-chevron-down"></i> -->
 						</div>
@@ -216,6 +233,7 @@
 						<i class="bi bi-sun" id="toggle-mode-icon"></i>
 					</button>
 					<a
+						href="javascript:void(0)"
 						aria-label="Try Pixa Playground"
 						class="openDemoForm btn tw-flex tw-gap-3 tw-px-3 tw-py-2 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
 					>
@@ -232,9 +250,16 @@
 			></button>
 		</header>
 
-		<section class="tw-text-white tw-py-16 tw-text-center">
-			<h1
+		<section
+			class="hero-section tw-relative tw-text-white tw-py-16 tw-text-center"
+		>
+			<!-- <h1
 				class="mx-[25rem] tw-text-6xl mt-36 md:tw-text-6xl font-semibold tw-mb-4 text-[rgb(23,137,238)]"
+			>
+				AI-Driven Parts Mapping Boosts Aftermarket Revenue
+			</h1> -->
+			<h1
+				class="lg:mx-[25rem] md:mx-[20rem] mt-36 tw-text-3xl sm:tw-text-4xl md:tw-text-5xl lg:tw-text-6xl tw-font-semibold tw-mb-6 text-[rgb(23,137,238)]"
 			>
 				AI-Driven Parts Mapping Boosts Aftermarket Revenue
 			</h1>
@@ -246,7 +271,7 @@
 
 		<section class="tw-text-white tw-py-16 tw-text-center">
 			<h1
-				class="mx-[25rem] tw-text-4xl mt-36 md:tw-text-4xl tw-font-semibold tw-mb-4"
+				class="lg:mx-[25rem] tw-text-4xl mt-36 md:tw-text-4xl tw-font-semibold tw-mb-4"
 			>
 				Overview
 			</h1>
@@ -262,28 +287,27 @@
 		</section>
 
 		<section
-			class="tw-text-white tw-py-16 tw-mt-10 tw-p-10"
-			style="background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1))"
+			class="tw-text-white tw-py-16 tw-mt-10 tw-p-10 dark:tw-bg-black dark:tw-text-white"
 		>
 			<h1
-				class="tw-text-center mx-[22rem] tw-text-4xl mt-20 md:tw-text-4xl tw-font-semibold tw-mb-4"
+				class="tw-text-center lg:mx-[22rem] tw-text-4xl mt-20 md:tw-text-4xl tw-font-semibold tw-mb-4"
 			>
 				The Challenge
 			</h1>
 
-			<div class="px-80 tw-mt-4">
+			<div class="lg:px-80 tw-mt-4 dark:tw-text-white">
 				<ul
 					class="tw-list-disc tw-list-outside tw-text-black tw-text-lg md:tw-text-2xl tw-font-light tw-max-w-4xl tw-mx-auto tw-mt-12 tw-space-y-6 tw-pl-6"
 				>
 					<li class="pt-5 flex">
-						<span class="mr-2">●</span>
-						<span>
+						<span class="mr-2 dark:tw-text-white">●</span>
+						<span class="dark:tw-text-white">
 							Field technicians couldn't offer replacements for competitor
 							parts, leading to missed sales opportunities.
 						</span>
 					</li>
 
-					<li class="pt-4 flex">
+					<li class="pt-4 flex dark:tw-text-white">
 						<span class="mr-2">●</span>
 						<span>
 							Aftermarket opportunities were consistently lost due to
@@ -292,7 +316,7 @@
 						</span>
 					</li>
 
-					<li class="pt-4 flex">
+					<li class="pt-4 flex dark:tw-text-white">
 						<span class="mr-2">●</span>
 						<span>
 							Engineering and product teams lacked a scalable way to map or
@@ -301,7 +325,7 @@
 						</span>
 					</li>
 
-					<li class="pt-4 flex">
+					<li class="pt-4 flex dark:tw-text-white">
 						<span class="mr-2">●</span>
 						<span>
 							Manual research processes were time-consuming and error-prone,
@@ -323,10 +347,10 @@
 
 			<!-- Content + Image Container -->
 			<div
-				class="tw-container tw-mx-auto flex md:tw-flex-row tw-items-start md:tw-gap-20 tw-gap-10 tw-px-6 md:tw-px-10 lg:tw-px-20 p-20 ml-24"
+				class="tw-container tw-mx-auto lg:flex md:tw-flex-row tw-items-start md:tw-gap-20 tw-gap-10 tw-px-6 md:tw-px-10 lg:tw-px-20 lg:p-20 lg:ml-24"
 			>
 				<!-- Text Content -->
-				<div class="md:tw-w-3/4">
+				<div class="tw-mt-6 md:tw-mt-0 md:tw-w-3/4">
 					<div class="tw-space-y-8">
 						<!-- 1 -->
 						<div>
@@ -378,7 +402,7 @@
 
 				<!-- Image -->
 				<div
-					class="tw-w-full md:tw-w-1/4 tw-flex md:tw-justify-end tw-justify-center"
+					class="tw-w-full md:tw-w-1/4 tw-flex md:tw-justify-end tw-justify-center tw-mt-6 md:tw-mt-0"
 				>
 					<img
 						src="./assets/images/casestudy.png"
@@ -391,12 +415,12 @@
 
 		<section class="tw-text-white tw-py-16 tw-mt-10 tw-p-10">
 			<h1
-				class="tw-text-center mx-[22rem] tw-text-4xl mt-20 md:tw-text-4xl tw-font-semibold tw-mb-12"
+				class="tw-text-center lg:mx-[22rem] tw-text-4xl mt-20 md:tw-text-4xl tw-font-semibold tw-mb-12"
 			>
 				The Impact
 			</h1>
 
-			<div class="flex md:tw-flex-row tw-gap-10 justify-center mt-16 mx-80">
+			<div class="flex md:tw-flex-row tw-gap-10 justify-center mt-16 lg:mx-80">
 				<!-- Left column -->
 				<div class="tw-flex tw-flex-col tw-gap-6">
 					<div class="tw-flex tw-items-start tw-gap-3">
@@ -445,13 +469,13 @@
 
 		<section class="tw-text-white tw-py-16 tw-mt-10 tw-p-10">
 			<h1
-				class="tw-text-center tw-text-4xl mt-20 md:tw-text-4xl font-bold tw-mb-12"
+				class="tw-text-center tw-text-4xl mt-20 md:tw-text-4xl font-bold lg:tw-mb-12"
 			>
 				Why It Worked
 			</h1>
 
 			<p
-				class="tw-mt-10 tw-text-xl tw-text-center tw-max-w-4xl tw-mx-auto mx-80"
+				class="tw-mt-10 tw-text-xl tw-text-center tw-max-w-4xl tw-mx-auto lg:mx-80"
 			>
 				Unlike traditional MDM or catalog tools, the AI-driven approach focused
 				on functional equivalence, contextual matching, and multi-system
@@ -462,7 +486,7 @@
 
 		<section class="tw-text-white tw-py-16 tw-text-center">
 			<h1
-				class="mx-[10rem] tw-text-5xl mt-36 md:tw-text-6xl font-semibold tw-mb-4 tw-bg-gradient-to-r from-purple-600 to-blue-600 tw-text-transparent tw-bg-clip-text"
+				class="lg:mx-[10rem] tw-text-5xl mt-36 md:tw-text-6xl font-semibold lg:tw-mb-4 tw-bg-gradient-to-r from-purple-600 to-blue-600 tw-text-transparent tw-bg-clip-text"
 			>
 				Unlock Efficiencies and Uncover Revenue Growth Opportunities
 			</h1>
@@ -654,7 +678,7 @@
 						class="tw-w-full tw-place-items-center tw-flex tw-flex-col tw-gap-6"
 					>
 						<img
-							id="case-study-logo"
+							id="app-logo"
 							src="./assets/logo/logoLight.svg"
 							alt="logo"
 							srcset=""
@@ -715,4 +739,43 @@
 
 	<script src="./scripts/components.js"></script>
 	<script src="./index.js"></script>
+	<script>
+		function updateLogo() {
+			const logo = document.getElementById("app-logo");
+			const promtLogo = document.getElementById("promt-logo");
+			const promptBanner = document.getElementById("prompt-banner");
+			const footerLogo = document.getElementById("footer-logo");
+			const caseStudyLogo = document.getElementById("case-study-logo");
+			console.log("caseStudyLogo", caseStudyLogo);
+			const isDark = document.documentElement.classList.contains("tw-dark"); // or tw-dark if you kept it
+			console.log("isDark", isDark);
+			logo.src = isDark
+				? "./assets/logo/logoDark.svg"
+				: "./assets/logo/logoLight.svg";
+
+			promtLogo.src = isDark
+				? "./assets/logo/logoDark.svg"
+				: "./assets/logo/logoLight.svg";
+
+			promptBanner.src = isDark
+				? "./assets/logo/logoDark.svg"
+				: "./assets/logo/logoLight.svg";
+
+			footerLogo.src = isDark
+				? "./assets/logo/logoDark.svg"
+				: "./assets/logo/logoLight.svg";
+
+			caseStudyLogo.src = isDark
+				? "./assets/logo/logoDark.svg"
+				: "./assets/logo/logoLight.svg";
+		}
+
+		function toggleMode() {
+			//toggle between dark and light mode
+			document.documentElement.classList.toggle("tw-dark");
+			updateToggleModeBtn();
+			updateLogo();
+		}
+		updateLogo();
+	</script>
 </html>

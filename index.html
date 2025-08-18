@@ -24,6 +24,21 @@
 		<meta property="og:url" content="https://github.com/PaulleDemon" />
 		<meta property="og:image" content="" />
 
+		<!-- Google tag (gtag.js) -->
+
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-3QT5P2HFC6"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "G-3QT5P2HFC6");
+		</script>
+
 		<!-- <link rel="stylesheet" href="css/tailwind-runtime.css" /> -->
 		<link rel="stylesheet" href="css/tailwind-build.css" />
 		<link rel="stylesheet" href="css/index.css" />
@@ -119,10 +134,8 @@
 					<a class="header-links" href="#casestudy"> Case Studies </a>
 
 					<div class="tw-relative tw-flex tw-flex-col tw-place-items-center">
-						<div
-							id="nav-dropdown-toggle-0"
-							class="max-lg:tw-max-w-fit tw-flex header-links tw-gap-1 tw-place-items-center"
-						>
+						<div id="nav-dropdown-toggle-0">
+							<!-- class="max-lg:tw-max-w-fit tw-flex header-links tw-gap-1 tw-place-items-center" -->
 							<!-- <span class=""> Features </span> -->
 							<!-- <i class="tw-text-sm bi bi-chevron-down"></i> -->
 						</div>
@@ -310,7 +323,7 @@
 							type="text"
 							id="fullName"
 							required
-							class="w-full p-2 border rounded-md focus:outline-none focus:border-indigo-500"
+							class="w-full p-2 border rounded-md focus:outline-none focus:border-indigo-500 text-gray-900 dark:text-white bg-white dark:bg-[#17181b] border-gray-300 dark:border-gray-600"
 						/>
 					</div>
 
@@ -322,18 +335,18 @@
 							type="email"
 							id="email"
 							required
-							class="w-full p-2 border rounded-md focus:outline-none focus:border-indigo-500"
+							class="w-full p-2 border rounded-md focus:outline-none focus:border-indigo-500 text-gray-900 dark:text-white bg-white dark:bg-[#17181b] border-gray-300 dark:border-gray-600"
 						/>
 					</div>
 
 					<div>
 						<label class="block text-sm font-medium text-gray-700 mb-1"
-							>Contact (Optional)</label
+							>Contact *</label
 						>
 						<input
 							type="tel"
 							id="contact"
-							class="w-full p-2 border rounded-md focus:outline-none focus:border-indigo-500"
+							class="w-full p-2 border rounded-md focus:outline-none focus:border-indigo-500 text-gray-900 dark:text-white bg-white dark:bg-[#17181b] border-gray-300 dark:border-gray-600"
 						/>
 					</div>
 
@@ -345,7 +358,7 @@
 							id="requirement"
 							required
 							rows="3"
-							class="w-full p-2 border rounded-md focus:outline-none focus:border-indigo-500"
+							class="w-full p-2 border rounded-md focus:outline-none focus:border-indigo-500 text-gray-900 dark:text-white bg-white dark:bg-[#17181b] border-gray-300 dark:border-gray-600"
 						></textarea>
 					</div>
 
@@ -665,7 +678,7 @@
 									>
 										<a
 											href="#sign-up"
-											class="btn !tw-w-full !tw-bg-transparent tw-duration-[0.3s] hover:!tw-bg-black hover:!tw-text-white dark:hover:!tw-bg-white dark:hover:!tw-text-black !tw-border-[1px] !tw-border-black !tw-text-black dark:!tw-border-white dark:!tw-text-white"
+											class="openDemoForm btn !tw-w-full !tw-bg-transparent tw-duration-[0.3s] hover:!tw-bg-black hover:!tw-text-white dark:hover:!tw-bg-white dark:hover:!tw-text-black !tw-border-[1px] !tw-border-black !tw-text-black dark:!tw-border-white dark:!tw-text-white"
 										>
 											Book a Demo
 										</a>

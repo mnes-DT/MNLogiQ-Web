@@ -84,7 +84,8 @@ function updateLogo() {
 	const promtLogo = document.getElementById("promt-logo");
 	const promptBanner = document.getElementById("prompt-banner");
 	const footerLogo = document.getElementById("footer-logo");
-
+	const caseStudyLogo = document.getElementById("case-study-logo");
+	console.log("caseStudyLogo", caseStudyLogo);
 	const isDark = document.documentElement.classList.contains("tw-dark"); // or tw-dark if you kept it
 	console.log("isDark", isDark);
 	logo.src = isDark
@@ -102,20 +103,17 @@ function updateLogo() {
 	footerLogo.src = isDark
 		? "./assets/logo/logoDark.svg"
 		: "./assets/logo/logoLight.svg";
-}
-function updateCaseStudyLogo() {
-	const caseStudyLogo = document.getElementById("case-study-logo");
-	console.log("caseStudyLogo", caseStudyLogo);
+
 	caseStudyLogo.src = isDark
 		? "./assets/logo/logoDark.svg"
 		: "./assets/logo/logoLight.svg";
 }
+
 function toggleMode() {
 	//toggle between dark and light mode
 	document.documentElement.classList.toggle("tw-dark");
 	updateToggleModeBtn();
 	updateLogo();
-	updateCaseStudyLogo();
 }
 
 function updateToggleModeBtn() {
@@ -149,12 +147,25 @@ promptForm.addEventListener("submit", (event) => {
 	promptWindow.addPrompt(promptInput.value);
 	promptInput.value = "";
 
-	if (promptWindow.promptList.length >= MAX_PROMPTS) {
-		// prompt signup once the user makes 3 prompts, ideally must be throttled via backend API
-		const signUpPrompt = document.querySelector("#signup-prompt");
-		signUpPrompt.classList.add("tw-scale-100");
-		signUpPrompt.classList.remove("tw-scale-0");
+	// if (promptWindow.promptList.length >= MAX_PROMPTS) {
+	// 	// prompt signup once the user makes 3 prompts, ideally must be throttled via backend API
+	// 	const signUpPrompt = document.querySelector("#signup-prompt");
+	// 	signUpPrompt.classList.add("tw-scale-100");
+	// 	signUpPrompt.classList.remove("tw-scale-0");
 
+	// 	promptForm.querySelectorAll("input").forEach((e) => {
+	// 		e.disabled = true;
+	// 	});
+	// }
+
+	if (promptWindow.promptList.length >= MAX_PROMPTS) {
+		// instead of showing signup-prompt → open your demo modal
+		const modal = document.getElementById("demoModal");
+		modal.classList.remove("hidden");
+		modal.classList.add("flex");
+		document.body.style.overflow = "hidden";
+
+		// disable further typing until they close or submit modal
 		promptForm.querySelectorAll("input").forEach((e) => {
 			e.disabled = true;
 		});
