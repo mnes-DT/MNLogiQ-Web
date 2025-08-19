@@ -88,6 +88,15 @@
 					background-position: 0% 50%;
 				}
 			}
+			.responsive-placeholder::placeholder {
+				font-size: 12px;
+			}
+
+			@media (max-width: 640px) {
+				.responsive-placeholder::placeholder {
+					font-size: 8px;
+				}
+			}
 		</style>
 	</head>
 	<body
@@ -809,7 +818,7 @@
 										<input
 											placeholder="Summarize changes in latest ISO 9001 guidelines relevant to us?"
 											type="text"
-											class="tw-p-2 !tw-outline-none tw-bg-transparent tw-border-none tw-w-full tw-placehoder-gray-500 dark:tw-placeholder-opacity-60 dark:tw-placeholder-gray-300 tw-max-w-[80%] tw-h-full"
+											class="tw-p-2 !tw-outline-none tw-bg-transparent tw-border-none tw-w-full tw-placehoder-gray-500 dark:tw-placeholder-opacity-60 dark:tw-placeholder-gray-300 tw-max-w-[80%] tw-h-full responsive-placeholder"
 											name="prompt"
 										/>
 										<button

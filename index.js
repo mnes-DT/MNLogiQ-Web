@@ -135,8 +135,13 @@ const promptWindow = new Prompt("#pixa-playground");
 const promptForm = document.querySelector("#prompt-form");
 const promptInput = promptForm.querySelector("input[name='prompt']");
 
-const MAX_PROMPTS = 3;
+// default
+let MAX_PROMPTS = 3;
 
+// override for mobile screens (e.g., width < 640px)
+if (window.matchMedia("(max-width: 640px)").matches) {
+	MAX_PROMPTS = 2;
+}
 promptForm.addEventListener("submit", (event) => {
 	event.preventDefault();
 

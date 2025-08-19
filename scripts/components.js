@@ -128,7 +128,7 @@ class Prompt {
 		}[this.chatModel];
 
 		const text = document.createElement("div");
-		text.classList.add("tw-w-fit", "tw-mr-auto", "tw-p-2");
+		text.classList.add("tw-w-fit", "tw-mr-auto", "tw-p-2,tw-text");
 		text.innerText = msg;
 
 		const promptELement = `
