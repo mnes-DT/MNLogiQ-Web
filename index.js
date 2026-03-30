@@ -89,24 +89,24 @@ function updateLogo() {
 	const isDark = document.documentElement.classList.contains("tw-dark"); // or tw-dark if you kept it
 	console.log("isDark", isDark);
 	logo.src = isDark
-		? "./assets/logo/logoDark.svg"
-		: "./assets/logo/logoLight.svg";
+		? "./assets/logo/logoDark.png"
+		: "./assets/logo/logoLight.png";
 
 	promtLogo.src = isDark
-		? "./assets/logo/logoDark.svg"
-		: "./assets/logo/logoLight.svg";
+		? "./assets/logo/logoDark.png"
+		: "./assets/logo/logoLight.png";
 
 	promptBanner.src = isDark
-		? "./assets/logo/logoDark.svg"
-		: "./assets/logo/logoLight.svg";
+		? "./assets/logo/logoDark.png"
+		: "./assets/logo/logoLight.png";
 
 	footerLogo.src = isDark
-		? "./assets/logo/logoDark.svg"
-		: "./assets/logo/logoLight.svg";
+		? "./assets/logo/logoDark.png"
+		: "./assets/logo/logoLight.png";
 
 	caseStudyLogo.src = isDark
-		? "./assets/logo/logoDark.svg"
-		: "./assets/logo/logoLight.svg";
+		? "./assets/logo/logoDark.png"
+		: "./assets/logo/logoLight.png";
 }
 
 function toggleMode() {
